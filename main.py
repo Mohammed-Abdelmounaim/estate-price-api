@@ -94,7 +94,7 @@ def predict_price(estate: EstateInput):
             zone_num
         ]], columns=[
             "wilaya", "baladia", "type", "surface", "rooms",
-            "floor", "YearOfSell", "estateCarac", "zone"
+            "floor ", "YearOfSell", "estateCarac", "zone"
         ])
 
         prediction = model.predict(features)[0]
